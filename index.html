@@ -1,65 +1,155 @@
-<div class="logo">UG FITNESS</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UG FITNESS</title>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Transform Your Body at UG FITNESS</h1>
-            <p>Join our premium fitness center and unlock your true potential with world-class training, expert guidance, and state-of-the-art equipment.</p>
-            <div class="hero-buttons">
-                <a href="#pricing" class="btn btn-primary">Join Now</a>
-                <a href="#contact" class="btn btn-secondary">Contact Us</a>
-            </div>
-        </div>
-    </section>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title fade-in">About UG FITNESS</h2>
-            <div class="about-content">
-                <div class="about-text fade-in">
-                    <h3>Build Strength, Gain Confidence</h3>
-                    <p>Located in Ghoghardiha, Madhubani, Bihar, UG FITNESS is more than just a gym—it's a transformation center. Our expert trainers and modern equipment will help you achieve your fitness goals and build the confidence you deserve.</p>
-                    <p>We focus on strength training, cardiovascular health, and overall wellness to create a complete fitness experience tailored to your needs.</p>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                </div>
-                <div class="about-image fade-in">
-                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Gym Interior">
-                </div>
-            </div>
-        </div>
-    </section>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Poppins;background:#0f0f0f;color:#fff;}
+html{scroll-behavior:smooth;}
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title fade-in">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <h3>Weight Training</h3>
-                    <p>Professional strength training with free weights, machines, and functional training equipment for maximum muscle growth.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Cardio Training</h3>
-                    <p>State-of-the-art cardio machines including treadmills, ellipticals, and bikes for optimal fat burning and
+nav{
+position:fixed;top:0;width:100%;
+background:#000;padding:15px;
+display:flex;justify-content:space-between;
+z-index:1000;
+}
+nav h1{color:#39ff14;}
+nav a{color:#fff;margin:0 10px;text-decoration:none;}
+
+section{padding:100px 20px;text-align:center;}
+
+.hero{
+height:100vh;
+display:flex;flex-direction:column;
+justify-content:center;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b') center/cover;
+}
+
+.hero h1{font-size:50px;margin-bottom:10px;}
+.hero p{margin-bottom:20px;}
+
+.btn{
+padding:12px 25px;
+background:#39ff14;
+color:#000;
+border:none;
+margin:10px;
+cursor:pointer;
+font-weight:bold;
+border-radius:25px;
+transition:0.3s;
+}
+.btn:hover{background:#fff;}
+
+.card{
+background:#1a1a1a;
+padding:20px;
+margin:15px;
+border-radius:15px;
+transition:0.3s;
+}
+.card:hover{transform:scale(1.05);}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.contact input,.contact textarea{
+width:80%;
+padding:10px;
+margin:10px;
+border:none;
+border-radius:10px;
+}
+
+footer{
+background:#000;
+padding:20px;
+text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>UG FITNESS</h1>
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section id="home" class="hero">
+<h1>Transform Your Body</h1>
+<p>Welcome to UG FITNESS</p>
+<a href="#pricing" class="btn">Join Now</a>
+<a href="#contact" class="btn">Contact</a>
+</section>
+
+<section id="about">
+<h2>About</h2>
+<p>UG FITNESS in Ghoghardiha, Madhubani, Bihar helps you stay fit and strong.</p>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<div class="grid">
+<div class="card">Weight Training</div>
+<div class="card">Cardio Training</div>
+<div class="card">Personal Training</div>
+<div class="card">Diet Plan</div>
+</div>
+</section>
+
+<section id="pricing">
+<h2>Pricing</h2>
+<div class="grid">
+<div class="card">Monthly - ₹500</div>
+<div class="card">Quarterly - ₹1200</div>
+<div class="card">Yearly - ₹4000</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="grid">
+<div class="card">Gym Image</div>
+<div class="card">Workout</div>
+<div class="card">Equipment</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>📍 Ghoghardiha, Madhubani, Bihar</p>
+<p>📞 7033506055</p>
+<p>📧 ujjawalchaudhary729@gmail.com</p>
+
+<form>
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<br>
+<button class="btn">Send</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 UG FITNESS</p>
+</footer>
+
+</body>
+</html>
